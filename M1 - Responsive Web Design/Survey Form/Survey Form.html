@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0129)file:///C:/Users/leoma/Documents/Coding/FreeCodeCamp/Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/Survey%20Form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style>
+.content {
+  max-width: 960px;
+  margin: auto;
+}
+ #title {
+  text-align: center;
+  }
+ #description {
+  text-align: center;
+  }
+  #commentsarea {
+    width: 945px;
+    height: 100px;
+  }
+</style>
+
+</head><body class="content">
+<h1 id="title">What skater are you?</h1>
+
+<p id="description">A quick survey to define your skater profile</p>
+
+<form id="survey-form">
+ <label for="name" id="name-label">
+Please enter your name here
+  <input type="text" style="margin: 5px" id="name" placeholder="Your name" required="">
+ </label>
+ <br>
+ <label for="email" id="email-label">
+Please enter your email here
+  <input style="margin: 5px" type="email" id="email" placeholder="Your email" required="">
+ </label>
+ <br>
+ <label for="number" id="number-label">
+ Please enter your age here
+  <input style="margin: 5px" type="number" id="number" min="0" max="130" placeholder="Your age" required="">
+ </label>
+ <br>
+<label for="dropdown">Choose a style:</label>
+<select style="margin: 5px" id="dropdown" name="styles">
+  <option value="volvo">Street</option>
+  <option value="saab">Ramp</option>
+  <option value="fiat">Bowl</option>
+  <option value="audi">Downhill</option>
+</select>
+
+  <fieldset style="margin: 5px"> <!--radio buttons-->
+    <legend>What's your favorite kind of skateboard:</legend>
+    <input id="shortskate" type="radio" name="skates" value="shortskate">
+    <label for="shortskate">Shortskate</label><br>
+    <input id="longskate" type="radio" name="skates" value="longskate">
+    <label for="longskate">Longskate</label><br>
+    <input id="cruiser" type="radio" name="skates" value="cruiser">
+    <label for="cruiser">Cruiser</label>
+  </fieldset>
+
+  <fieldset style="margin: 5px"> <!--checkboxes-->
+    <legend>What country did you skate in</legend>
+    <input id="France" type="checkbox" name="country" value="France">
+    <label for="France">France</label><br>
+    <input id="Canada" type="checkbox" name="country" value="Canada">
+    <label for="Canada">Canada</label><br>
+    <input id="USA" type="checkbox" name="country" value="USA">
+    <label for="USA">USA</label>
+  </fieldset>
+
+<textarea style="margin: 5px" id="commentsarea" name="message">Enter your comments here
+</textarea>
+
+<button style="margin: 5px" type="submit" id="submit">Submit</button>
+
+</form>
+
+
+</body></html>
