@@ -15,7 +15,7 @@ node filename.js
 ``` 
 ### M3 - Front End
 * Go to the my-app directory for the Project you want to run
-* ``` 
+``` 
 npm install (maybe not necessary)
 npm start 
 ```
