@@ -14,7 +14,7 @@
 node filename.js
 ``` 
 ### M3 - Front End
-* Go to the my-app directory for the Project you want to run
+* Go to the my-app directory of the Project you want to run
 ``` 
 npm install (maybe not necessary)
 npm start 
@@ -22,3 +22,10 @@ npm start
 It will display in browser at localhost:3000
 ### M4 - Data Visualization
 * Open the .html file with a browser
+### M5 - Back End and APIs
+* Go to the directory of the Project you want to run
+``` 
+npm start 
+```
+* Check the **port** indicated by your terminal
+* Open a browser and go to localhost:**port**
