@@ -1,0 +1,14 @@
+.bar:hover {
+  fill: brown;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  background: lightgreen;
+  pointer-events: none;
+}

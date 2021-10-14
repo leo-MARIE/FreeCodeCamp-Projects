@@ -1,0 +1,19 @@
+#tooltip {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 35px;
+  margin-left: 350px
+}
+
+h2 {
+  font-size: 20px;
+  margin-left: 255px
+}

@@ -6,7 +6,7 @@
 * Clone the repo
 
 ### M1 - Responsive Web Projects
-* Open the .html file in a browser
+* Open the .html file with a browser
 
 ### M2 - Javascript
 * Run the .js file with 
@@ -20,3 +20,5 @@ npm install (maybe not necessary)
 npm start 
 ```
 It will display in browser at localhost:3000
+### M4 - Data Visualization
+* Open the .html file with a browser
