@@ -24,11 +24,11 @@ Please head to [this FCC Projects Webpage](https://leo-marie.github.io/FreeCodeC
 
 You can also access GH Pages with these links :
 ### M1 - Responsive Web Projects
-* [Personal Portfolio](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/Personal%20Portfolio%20Webpage.html)
-* [Product Landing Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/Product%20Landing%20Page.html)
-* [Survey Form](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/Survey%20Form.html)
-* [Technical Documentation Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html)
-* [Tribute Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/Tribute%20Page.html)
+* [Personal Portfolio](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/index.html)
+* [Product Landing Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/index.html)
+* [Survey Form](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/index.html)
+* [Technical Documentation Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/index.html)
+* [Tribute Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/index.html)
 ### M4 - Data Visualisation
 * [D3 Bar Chart](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html)
 * [Choropleth Map](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html)
