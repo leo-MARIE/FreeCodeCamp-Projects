@@ -7,8 +7,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
   <style>
 
+:root {
+  --color-text-primary: rgb(167, 255, 255);
+  --color-text-secondary: #0ff;
+  --color-text-hover: rgb(167, 255, 255);
+  --color-border: rgb(167, 255, 255);
+  --color-glow: #0ff;
+  --color-bg-primary: rgb(91,97,98);
+  --color-bg-secondary: rgb(26,30,38);
+  --color-shadow: rgb(26,30,38);
+}
 
        
 body, html {
@@ -18,12 +29,11 @@ body, html {
     
 }
 body {
-    background: linear-gradient(135deg, rgb(91,97,98), rgb(26,30,38));
-    color: rgba(188,122,93,255);
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
     /* font-family: 'Allerta Stencil'; */
     /* font-family: 'Orbitron', sans-serif; */
-    font-family: 'Coda', cursive;
-    font-size: 1.4em;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.6em;
     margin: 0px;
     }
 
@@ -34,7 +44,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 0.5fr 4fr;
     grid-template-areas: 
     ". title title title ."
     ". . . . ."
@@ -43,48 +53,62 @@ body {
 
 h1 {
     grid-area: title;
-    color: rgb(167, 255, 255);
-    box-shadow: 0 0 40px 20px #0ff;
+    color: var(--color-text-primary);
+    box-shadow: /*0 0 10px 5px var(--color-glow), */3px 4px 7px inset var(--color-shadow), 3px 4px 7px var(--color-shadow); 
+    /* #0ff */
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
     border-radius:15px;
-    border: 10px inset rgb(167, 255, 255);
-    background: linear-gradient(135deg, rgb(48,48,49), rgb(12,10,12));
+    border: 10px inset var(--color-border);
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
     /* margin: 60px 500px 250px 500px; */
     padding: 30px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
+    text-shadow: 4px 4px 4px var(--color-shadow);
 }
 
 .modules {
-    color: rgb(167, 255, 255);
-    box-shadow: 0 0 40px 20px #0ff;
+    color: var(--color-text-primary);
+    box-shadow: 0 0 20px 10px var(--color-glow), 3px 4px 7px inset var(--color-shadow);
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
     border-radius:15px;
-    border: 10px inset rgb(167, 255, 255);
-    background: linear-gradient(135deg, rgb(48,48,49), rgb(12,10,12));
+    border: 10px inset var(--color-border);
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
     /* margin: 0px 70px 70px 70px; */
     padding: 30px;
     display: flex;
     flex-direction: column;
+    transition: transform .3s, border .2s, box-shadow .25s; /* Animation */
+    text-shadow: 4px 4px 4px var(--color-shadow);
 }
+
+.modules:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 0 0 40px 20px var(--color-glow), 5px 8px 5px inset var(--color-shadow);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    border: 12px inset var(--color-border);
+    padding-bottom: 2%;
+}
+
 
 #module1 {
     grid-area: module1;
-    margin: 0% 0% 10% 20%;
+    margin: 10% 0% 30% 20%;
 }
 
 #module2 {
     grid-area: module2;
-    margin: 0% 20% 10% 0%;
+    margin: 10% 20% 30% 0%;
 }
 
 a:link {text-decoration: none}
-a:visited { text-decoration: none; color: #0ff; }
-a:hover { text-decoration: none; color: rgba(245,104,22,255); }
-a:focus { text-decoration: none; color: rgba(255,160,58,255); }
-a:hover, a:active { text-decoration: none; color: rgb(167, 255, 255) }
+a:visited { text-decoration: none; color: var(--color-text-secondary); }
+a:hover { text-decoration: none; color: var(--color-hover); font-size: 1.05em; }
+a:focus { text-decoration: none; color: var(--color-hover); }
+a:hover, a:active { text-decoration: none; color: var(--color-hover) }
   </style>
 
 </head>
@@ -93,7 +117,6 @@ a:hover, a:active { text-decoration: none; color: rgb(167, 255, 255) }
     <h1>FreeCodeCamp Projects</h1>
     <div id="module1" class="modules">
         <h2>M1 - Responsive Web Design</h2>
-        <br>
         <ul>
             <li>
                 <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/index.html">Personnal Portfolio Page</a>
@@ -115,7 +138,6 @@ a:hover, a:active { text-decoration: none; color: rgb(167, 255, 255) }
 
     <div id="module2" class="modules">
         <h2>M4 - Data Visualization</h2>
-        <br>
         <ul>
             <li>
                 <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html">D3 Bar Chart</a>
