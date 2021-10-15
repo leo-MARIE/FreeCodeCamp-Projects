@@ -19,7 +19,10 @@ It will display in browser at localhost:3000
 * Check the **port** indicated by your terminal
 * Open a browser and go to localhost:**port**
 ## GitHub Pages
-Here is my [Homepage](https://leo-marie.github.io/FreeCodeCamp-Projects/)
+
+Please head to : [Homepage](https://leo-marie.github.io/FreeCodeCamp-Projects/)
+
+You can also access GH Pages with these links :
 ### M1 - Responsive Web Projects
 * [Personal Portfolio](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/Personal%20Portfolio%20Webpage.html)
 * [Product Landing Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/Product%20Landing%20Page.html)
