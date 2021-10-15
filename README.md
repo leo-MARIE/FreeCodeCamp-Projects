@@ -26,4 +26,8 @@ It will display in browser at localhost:3000
 * [Technical Documentation Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html)
 * [Tribute Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/Tribute%20Page.html)
 ### M4 - Data Visualisation
-* [Tribute Page](https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/Tribute%20Page.html)git 
+* [D3 Bar Chart](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html)
+* [Choropleth Map](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html)
+* [Heat Map](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Heat%20Map/index.html)
+* [Scatterplot Graph](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Scatterplot%20Graph/index.html)
+* [Tree Map](https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Tree%20Map/index.html)
