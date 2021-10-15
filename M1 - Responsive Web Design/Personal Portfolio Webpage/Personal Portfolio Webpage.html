@@ -1,37 +1,39 @@
 <style>
-  body {
-    text-align: center;
-  }
-#img-div{
-padding: 10px;
-  }
-
-#image {
-  max-width: 100%;
-  height: auto;
-}
-
-
-h2{
-  color: rgb(200,25,3);
-}
-
-</style>
-
-<body id="main">
+  @media (max-width: 500px) {
+    .project-tile {
+    font-size: 50px;
+    background-color: blue;}}
+   
+  #welcome-section {
+    height: 100vh;   
+    }
+  #navbar {
+    position: fixed;
+    top: 0;
+    }
   
-<h2 id="title">Fred Vargas</h2>
+    .body {
+    margin-top : 30px;  
+    }
   
-  <div id="img-div">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Fred_Vargas.jpg/1200px-Fred_Vargas.jpg" width="200">
-      <figcaption id="img-caption">
-Fred Vargas writing a new book
-      </figcaption>
-  </div>
-
-<h3 id="tribute-info">One of the best woman writter from France<h3>
-
-<a href="https://fr.wikipedia.org/wiki/Fred_Vargas" target="_blank" id="tribute-link"> French wikipedia link </a>
+  </style>
   
+  <nav id="navbar">
+    <a href="#project1">Link to project 1</a>
+      <a id="profile-link" href="#" target="_blank">Link to my profile</a>
+  </nav>
   
-</body>
+  <body class="body">
+    
+  <section id="welcome-section">
+    <h1>Hey, I am Boufadou</h1>
+  </section>
+  
+  <section id="projects">
+    <div class="project-tile" id="project1">
+      Jungle blockz soundtracks
+    </div>
+    <a href="#">link</a>
+  </section>
+    
+  </body>
