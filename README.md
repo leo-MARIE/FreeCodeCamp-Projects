@@ -1,6 +1,6 @@
 # FreeCodeCamp-Projects
 *Personal projects for FCC certifications*
-## How to Use the Repo :
+## How to Run this Repo :
 * Clone the repo
 ### M1 - Responsive Web Projects
 * Open the .html file with a browser
