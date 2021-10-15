@@ -1,38 +1,117 @@
-<h1>Summary</h1>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC</title>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <style>
+      html, 
+body {
+    height: 100%;
+    
+}
+body {
+    background: linear-gradient(135deg, rgb(91,97,98), rgb(26,30,38));
+    color: rgba(188,122,93,255);
+    font-family: 'Allerta Stencil';
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "title title"
+    "module1 module2";
+    }
 
-<h2>M1 - Responsive Web Design</h2>
-<ul>
-    <li>
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/Personal%20Portfolio%20Webpage.html">Personnal Portfolio Page</a>
-    </li>
-    <li>    
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/Product%20Landing%20Page.html">Product Landing Page</a>
-    </li>
-    <li>          
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/Survey%20Form.html">Survey Form</a>
-    </li>
-    <li>      
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html">Technical Documentation Page</a>
-    </li>
-    <li>   
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/Tribute%20Page.html">Tribute Page</a>
-    </li>
-</ul>
-<h2>M4 - Data Visualization</h2>
-<ul>
-    <li>
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html">D3 Bar Chart</a>
-    </li>
-    <li>    
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html">Choropleth Map</a>
-    </li>
-    <li>          
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Heat%20Map/index.html">Heat Map</a>
-    </li>
-    <li>      
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Scatterplot%20Graph/index.html">Scatterplot Graph</a>
-    </li>
-    <li>   
-        <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Tree%20Map/index.html">Tree Map</a>
-    </li>
-</ul>
+h1 {
+    grid-area: title;
+    color: rgb(167, 255, 255);
+    box-shadow: 0 0 40px 20px #0ff;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    border-radius:1%;
+    border: 10px inset rgb(167, 255, 255);
+    background: linear-gradient(135deg, rgb(48,48,49), rgb(12,10,12));
+    margin: 160px 500px 160px 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+}
+
+.modules {
+    color: rgb(167, 255, 255);
+    box-shadow: 0 0 40px 20px #0ff;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+    border-radius:1%;
+    border: 10px inset rgb(167, 255, 255);
+    background: linear-gradient(135deg, rgb(48,48,49), rgb(12,10,12));
+    margin: 0px 70px 150px 70px;
+    padding: 30px;
+}
+
+#module1 {
+    grid-area: module1;
+}
+
+#module2 {
+    grid-area: module2;
+}
+
+a:link {text-decoration: none}
+a:visited { text-decoration: none; color: #0ff; }
+a:hover { text-decoration: none; color: rgba(245,104,22,255); }
+a:focus { text-decoration: none; color: rgba(255,160,58,255); }
+a:hover, a:active { text-decoration: none; color: rgb(167, 255, 255) }
+  </style>
+
+</head>
+<body>
+
+<h1>Summary</h1>
+    <div id="module1" class="modules">
+        <h2>M1 - Responsive Web Design</h2>
+        <ul>
+            <li>
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/Personal%20Portfolio%20Webpage.html">Personnal Portfolio Page</a>
+            </li>
+            <li>    
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/Product%20Landing%20Page.html">Product Landing Page</a>
+            </li>
+            <li>          
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/Survey%20Form.html">Survey Form</a>
+            </li>
+            <li>      
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html">Technical Documentation Page</a>
+            </li>
+            <li>   
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/Tribute%20Page.html">Tribute Page</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="module2" class="modules">
+        <h2>M4 - Data Visualization</h2>
+        <ul>
+            <li>
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html">D3 Bar Chart</a>
+            </li>
+            <li>    
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html">Choropleth Map</a>
+            </li>
+            <li>          
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Heat%20Map/index.html">Heat Map</a>
+            </li>
+            <li>      
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Scatterplot%20Graph/index.html">Scatterplot Graph</a>
+            </li>
+            <li>   
+                <a href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Tree%20Map/index.html">Tree Map</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
