@@ -38,7 +38,8 @@ function (e, myJson) {// myJson is the parsed data
   const svg = d3.select("body") // creates svg canvas
   .append("svg").
   attr("width", w).
-  attr("height", h);
+  attr("height", h).
+  attr("id", "mysvg");
 
   // ----- BARS -----
   svg.selectAll("rect").
@@ -49,18 +50,18 @@ function (e, myJson) {// myJson is the parsed data
   .attr("y", (d, i) => yScale(d[1])).
   attr("width", barWidth).
   attr("height", (d, i) => d[1] / 100).
-  attr("fill", "navy") // sets color
+  attr("fill", "var(--color-text-primary)") // sets color
   .attr("class", "bar") // class styled in style, change color when hover
   .attr("data-date", (d, i) => d[0]).
   attr("data-gdp", (d, i) => d[1]).
   on("mouseover", function (d, i) {// mouseover function
     d3.select(this).
-    style("fill", "green").
+    style("fill", "var(--color-text-secondary)").
     attr("width", barWidth);
 
     tooltip.style("opacity", 0.8).
     style('left', d3.event.pageX - 70 + 'px').
-    style('top', '100px').
+    style('top', '200px').
     attr("id", "tooltip").
     attr("data-date", d[0]).
     attr("data-gdp", d[1]).
@@ -69,7 +70,7 @@ function (e, myJson) {// myJson is the parsed data
 
   on("mouseout", function (d, i) {// mouseout function
     d3.select(this).
-    style("fill", "navy").
+    style("fill", "var(--color-text-primary)").
     attr("width", barWidth);
     tooltip.style("opacity", 0);
   });

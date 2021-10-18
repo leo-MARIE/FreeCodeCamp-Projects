@@ -126,7 +126,7 @@ function (e, myJson) {// myJson is the parsed data
   const legendArray = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   const xScaleLegend = d3.scaleLinear().
   domain([3, 13]).
-  range([300, 460]);
+  range([(w*0.97)-80, (w*0.97)+80]);
 
   const legend = d3.select("body").
   append("svg").

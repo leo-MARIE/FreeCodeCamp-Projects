@@ -1,4 +1,4 @@
-const w = 1000;
+const w = 960;
 const h = 600;
 const padding = 60;
 
@@ -29,8 +29,8 @@ d3.select("body").
 append("h2").
 text("Choropleth Map").
 attr("id", "title").
-style("font-size", "35px").
-style("margin-left", "350px");
+style("font-size", "35px");
+//style("margin-left", "350px");
 
 // ----- DESCRIPTION -----
 d3.select("body").
@@ -95,8 +95,8 @@ function ready(error, us, education) {
     d3.select(this);
 
     tooltip.style("opacity", 0.8).
-    style('left', d3.event.pageX - 70 + 'px').
-    style('top', d3.event.pageY - 70 + 'px').
+    style('left', d3.event.pageX - 160 + 'px').
+    style('top', d3.event.pageY - 160 + 'px').
     attr("id", "tooltip").
     attr('data-education', function () {
       var result = education.filter(function (obj) {
@@ -146,13 +146,13 @@ function ready(error, us, education) {
   const legendArray = [0, 10, 20, 30, 40, 50, 60];
   const xScaleLegend = d3.scaleLinear().
   domain([0, 70]).
-  range([300, 460]);
+  range([(w)-80, (w)+80]);
 
   const legend = d3.select("body").
   append("svg").
   attr("width", "160x").
   attr("id", "legend").
-  attr("height", h);
+  attr("height", "60px");
 
   legend.selectAll("rect").
   data(legendArray).

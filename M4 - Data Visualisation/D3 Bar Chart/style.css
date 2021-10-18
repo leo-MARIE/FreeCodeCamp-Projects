@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root {
+--color-text-primary: #630A10;
+--color-text-secondary: #911F27;
+--color-bg-primary: #FCF0C8;
+--color-bg-secondary: #FACE7F;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary)); 
+  text-align: center;
+  color: var(--color-text-primary);
+  font-family: 'Sen', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 50px;
+}
+
+#mysvg {
+  margin-top: 120px;
+}
+
 .bar:hover {
-  fill: brown;
+  fill: var(--color-text-secondary);
 }
 
 #tooltip {
@@ -7,8 +38,8 @@
   align-items: center;
   position: absolute;
   text-align: center;
-  width: 140px;
-  height: 40px;
-  background: lightgreen;
+  width: 150px;
+  height: 80px;
+  background: var(--color-bg-secondary);
   pointer-events: none;
 }

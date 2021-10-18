@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root {
+--color-text-primary: #630A10;
+--color-text-secondary: #911F27;
+--color-bg-primary: #FCF0C8;
+--color-bg-secondary: #FACE7F;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary)); 
+  text-align: center;
+  color: var(--color-text-primary);
+  font-family: 'Sen', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 40px;
+}
+
 #tooltip {
   display: flex;
   align-items: center;

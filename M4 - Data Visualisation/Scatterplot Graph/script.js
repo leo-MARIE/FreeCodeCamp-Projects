@@ -49,13 +49,13 @@ function (e, myJson) {// myJson is the parsed data
   attr("cx", (d, i) => xScale(new Date(d.Year, 0, 0, 0, 0, 0, 0))) // convert to date so we can scale it
   .attr("cy", (d, i) => yScale(new Date(d.Seconds * 1000))).
   attr("r", d => 5).
-  attr("fill", "navy").
+  attr("fill", "var(--color-text-primary)").
   attr("class", "dot") // class styled in style, change color when hover
   .attr("data-xvalue", (d, i) => new Date(d.Year, 0, 0, 0, 0, 0, 0)).
   attr("data-yvalue", (d, i) => new Date(d.Seconds * 1000)).
   on("mouseover", function (d, i) {// mouseover function
     d3.select(this).
-    style("fill", "green").
+    style("fill", "var(--color-text-secondary)").
     attr("r", 5);
 
     tooltip.style("opacity", 0.8).
@@ -68,7 +68,7 @@ function (e, myJson) {// myJson is the parsed data
   .
   on("mouseout", function (d, i) {// mouseout function
     d3.select(this).
-    style("fill", "navy");
+    style("fill", "var(--color-text-primary)");
     //         .attr("width", barWidth);  
     tooltip.style("opacity", 0);
   }); // on mouse out
