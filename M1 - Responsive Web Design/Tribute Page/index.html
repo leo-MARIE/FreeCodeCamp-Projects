@@ -1,35 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tribute Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+      :root {
+      --color-text-primary: #D5D5D5;
+      --color-text-secondary: #B2F9FC;
+      --color-bg-primary: #091353;
+      --color-bg-secondary: #9D84B7;
+        }
+      body, html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+         }
+      body {
+        text-align: center;
+        background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
+        color: var(--color-text-primary);
+        font-size: 1.6em;
+        font-family: 'Special Elite', cursive;
+      }
+      #img-div{
+      padding: 10px;
+        }
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<style>
-  body {
-    text-align: center;
-  }
-#img-div{
-padding: 10px;
-  }
+      img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 7px 7px var(--color-bg-secondary); 
+      }
 
-#image {
-  max-width: 100%;
-  height: auto;
-}
+      h2{
+        color: var(--color-text-secondary);
+        margin: 0 0 0 0;
+        padding: 120px 0 80px 0;
+        font-size: 2em;
+      }
 
-h2{
-  color: rgb(200,25,3);
-}
-</style>
-</head><body id="main">
+      #img-caption {
+        font-style: italic;
+        margin-top: 10px;
+        font-size: 0.8em;
+      }
+      a:link {text-decoration: none; color: var(--color-text-primary);}
+      a:visited { text-decoration: none; color: var(--color-text-primary); }
+      a:hover { text-decoration: none; color: var(--color-text-secondary); }
+      a:focus { text-decoration: none; color: var(--color-text-secondary); }
+      a:hover, a:active { text-decoration: none; color: var(--color-text-secondary); }
+
+      h3 {
+        margin-top: 120px;
+      }
+
+    </style>
+  </head>
+  <body id="main">
   
-<h2 id="title">Fred Vargas</h2>
+    <h2 id="title">Fred Vargas</h2>
   
-  <div id="img-div">
-    <img src="./Tribute Page_files/1200px-Fred_Vargas.jpg" width="200">
-      <figcaption id="img-caption">
-Fred Vargas writing a new book
-      </figcaption>
-  </div>
+    <div id="img-div">
+      <img src="./Tribute Page_files/1200px-Fred_Vargas.jpg" width="200">
+        <figcaption id="img-caption">
+  Fred Vargas writing a new book
+        </figcaption>
+    </div>
 
-<h3 id="tribute-info">One of the best woman writter from France</h3><h3>
+    <h3 id="tribute-info">One of the best woman writter from France</h3>
 
-<a href="https://fr.wikipedia.org/wiki/Fred_Vargas" target="_blank" id="tribute-link"> French wikipedia link </a>
+    <a href="https://fr.wikipedia.org/wiki/Fred_Vargas" target="_blank" id="tribute-link"> French wikipedia link </a>
   
-</h3></body></html>
+  </body>
+</html>
