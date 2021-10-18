@@ -1,74 +1,119 @@
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<style>
-  #navbar {
-  position: fixed;
-  left: 0;
-  }
-  .main {
-  margin-left: 30%;
-  }
-@media (max-height: 800px) {
-  p {
-  font-size: 10px;
- }}
-</style>
-</head><body>
-<nav id="navbar">
-<header>
-  <h1>
-Different kinds of skateboards
-  </h1>
-</header>
-<ul>
-<li><a href="#Shortskate" class="nav-link">Shortskate</a></li>
-<li><a href="#Longskate" class="nav-link">Longskate</a></li>
-<li><a href="#Cruiser" class="nav-link">Cruiser</a></li>
-<li><a href="#Freeboard" class="nav-link">Freeboard</a></li>
-<li><a href="#Streetluge" class="nav-link">Streetluge</a></li>
-</ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <style>
+      :root {
+      --color-text-primary: #C36A2D;
+      --color-text-secondary: #E2C275;
+      --color-bg-primary: #FBFBFB;
+      --color-bg-secondary: #C36A2D;
+        }
+      body {
+        color: var(--color-text-primary);
+        background-color: var(--color-bg-primary);
+        font-family: 'Quattrocento', serif;
+      }
+      #navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      color: var(--color-text-secondary);
+      background-color: var(--color-bg-secondary);
+      height: 100%;
+      padding: 20px;
+      border-right: 10px solid var(--color-text-secondary)
+      }
+      .main {
+      margin-left: 30%;
+      margin-top: 3%;
+      }
 
-<main id="main-doc" class="main">
-  
-<section class="main-section" id="Shortskate">
-  <header><h2>Shortskate</h2></header>
-  <p>Shortskate is the most known kind of skate.</p>
-  <p>It's the best one for street tricks.</p>
-  <code>z = 2 + 3</code>
-  <code>z = 2 + 3</code>
-  <code>z = 2 + 3</code>
-  <code>z = 2 + 3</code>
-  <code>z = 2 + 3</code>
-</section>
-<section class="main-section" id="Longskate">
-  <header><h2>Longskate</h2></header>
-  <p>Longskate is like a bigger shortskate.</p>
-  <p>It allows to practice dancing, downhill or carving.</p>
-  <ul><!--ul = unordered, ol = ordered-->
-  <li>pintail</li>
-  <li>drop-through</li>
-  <li>cruiser like</li>
-  <li>long distance pumping</li>
-  <li>carving</li>
-</ul>
+      h2 {
+        font-style: bold;
+      }
 
-</section>
-<section class="main-section" id="Cruiser">
-  <header><h2>Cruiser</h2></header>
-  <p>Cruiser is for chill cruising.</p>
-  <p>You can also use it for old school tricks and bown riding.</p>
-</section>
-<section class="main-section" id="Freeboard">
-  <header><h2>Freeboard</h2></header>
-  <p>You feet are fasten on a freeboard.</p>
-  <p>It's known to feel like a snowboard.</p>
-</section>
-<section class="main-section" id="Streetluge">
-  <header><h2>Streetluge</h2></header>
-  <p>You lie on your back on a streetluge.</p>
-  <p>It allows you to go super fast in downhill.</p>
-</section>
+      @media (max-height: 800px) {
+        p {
+        font-size: 0.9em;
+      }}
 
-</main>
-</body></html>
+      li {
+        padding: 5px;
+      }
+
+      #navul {
+        list-style-type: none; /*remove dots*/
+      }
+
+      a:link {text-decoration: none; color: var(--color-text-secondary);}
+      a:visited { text-decoration: none; color: var(--color-text-secondary); }
+      a:hover { text-decoration: none; color: var(--color-bg-primary); font-size: 1.05em; }
+      a:focus { text-decoration: none; color: var(--color-bg-primary); }
+      a:hover, a:active { text-decoration: none; color: var(--color-bg-primary) }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navbar">
+    <header>
+      <h1>
+    Different kinds of skateboards
+      </h1>
+    </header>
+    <ul id="navul">
+    <li><a href="#Shortskate" class="nav-link">Shortskate</a></li>
+    <li><a href="#Longskate" class="nav-link">Longskate</a></li>
+    <li><a href="#Cruiser" class="nav-link">Cruiser</a></li>
+    <li><a href="#Freeboard" class="nav-link">Freeboard</a></li>
+    <li><a href="#Streetluge" class="nav-link">Streetluge</a></li>
+    </ul>
+    </nav>
+
+    <main id="main-doc" class="main">
+      
+    <section class="main-section" id="Shortskate">
+      <header><h2>Shortskate</h2></header>
+      <p>Shortskate is the most known kind of skate.</p>
+      <p>It's the best one for street tricks.</p>
+      <code>z = 2 + 3</code>
+      <code>z = 2 + 3</code>
+      <code>z = 2 + 3</code>
+      <code>z = 2 + 3</code>
+      <code>z = 2 + 3</code>
+    </section>
+    <section class="main-section" id="Longskate">
+      <header><h2>Longskate</h2></header>
+      <p>Longskate is like a bigger shortskate.</p>
+      <p>It allows to practice dancing, downhill or carving.</p>
+      <ul><!--ul = unordered, ol = ordered-->
+      <li>pintail</li>
+      <li>drop-through</li>
+      <li>cruiser like</li>
+      <li>long distance pumping</li>
+      <li>carving</li>
+    </ul>
+
+    </section>
+    <section class="main-section" id="Cruiser">
+      <header><h2>Cruiser</h2></header>
+      <p>Cruiser is for chill cruising.</p>
+      <p>You can also use it for old school tricks and bown riding.</p>
+    </section>
+    <section class="main-section" id="Freeboard">
+      <header><h2>Freeboard</h2></header>
+      <p>You feet are fasten on a freeboard.</p>
+      <p>It's known to feel like a snowboard.</p>
+    </section>
+    <section class="main-section" id="Streetluge">
+      <header><h2>Streetluge</h2></header>
+      <p>You lie on your back on a streetluge.</p>
+      <p>It allows you to go super fast in downhill.</p>
+    </section>
+
+    </main>
+  </body>
+</html>
