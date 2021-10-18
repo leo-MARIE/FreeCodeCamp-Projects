@@ -1,25 +1,126 @@
 
-<html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <style>
- 
-    @media (max-width: 350px) {
-      p {
-        font-size: 10px;
-     }}
-    
-      #header-img {
-        display: flex;
-        flex: 1 1 150px;
-        justify-content: center;
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Landing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
+    <style>
+  
+      @media (max-width: 350px) {
+        p {
+          font-size: 10px;
+      }}
+      
+      :root {
+      --color-text-primary: #eeeeee;
+      --color-text-secondary: #d72323;
+      --color-bg-primary: #111111;
+        }
+
+      body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0 0 0 0;
       }
       
-  </style>
-</head>
-    
-    <header id="header">
+      body {
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        padding: 150px 0 0 40px;
+        font-family: 'Karma', serif;
+        font-size: 1.1em;
+        box-sizing: border-box; /*magic, when height of body is bigger than*/
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        height: 120px;
+        align-items: center;
+        border-bottom: 2px solid var(--color-text-primary);
+        overflow: hidden;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg-primary);
+        font-family: 'Karma', serif;
+        font-size: 1.2em;
+      }
       
-    <img src="importantLogo.jpeg" alt="Company logo" id="header-img">
+      #header-img {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+        border-right: 2px double var(--color-text-primary)
+      }
+
+      .nav-link {
+        font-size: 1.1em;
+        /*padding: 20px;*/
+        padding: 120px;
+      }
+
+      .nav-link:link {text-decoration: none; color: var(--color-text-secondary)}
+      .nav-link:visited { text-decoration: none; color: var(--color-text-secondary); }
+      .nav-link:hover { text-decoration: none; color: var(--color-text-primary); background-color: var(--color-text-secondary); }
+      .nav-link:focus { text-decoration: none; color: var(--color-text-primary); }
+      .nav-link:hover, a:active { text-decoration: none; color: var(--color-text-primary) } 
+
+      #video-wrapper {
+        text-align: center;
+      }
+
+      #form {
+        text-align: center;
+      }
+
+      p {
+      text-align: center;
+      font-style: italic;
+      margin-top: 40px;
+      }
+
+      #submit {
+        background: var(--color-bg-primary);
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-text-secondary);
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #submit:hover {
+        background: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        border: 1px solid var(--color-text-primary);
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #email {
+        background: var(--color-bg-primary);
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-text-secondary);
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #email:hover {
+        background: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        border: 1px solid var(--color-text-primary);
+        padding: 5px;
+        border-radius: 5px;
+      }
+        
+    </style>
+  </head>
+    
+  <header id="header">
+      
+    <img src="./image/logo.png" alt="Company logo" id="header-img">
     
     <nav id="nav-bar">
       <a href="#story" class="nav-link"> Our story </a> 
@@ -27,16 +128,17 @@
       <a href="#products" class="nav-link"> Our products </a>   
     </nav>
     
-    </header>
+  </header>
     
-    <body>
-    
-    <video id="video" width="320" height="240" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-    </video>
-    
+  <body>
+    <div id="video-wrapper">
+      <video id="video" width="640" height="480" controls>
+        <source src="./video/video.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       
       <input type="email" id="email" name="email" placeholder="Enter you email here">
@@ -44,7 +146,7 @@
       <input type="submit" id="submit">
         
     </form>
-    
+  
     <p id="story">
     We started our journey in New York in 1995.
     <p>
@@ -54,5 +156,5 @@
     <p id="products">
     We have 3 models of e-cigarettes.
     <p>  
-    </body>
+  </body>
 </html>
