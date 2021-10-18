@@ -1,76 +1,131 @@
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style>
-.content {
-  max-width: 960px;
-  margin: auto;
-}
- #title {
-  text-align: center;
-  }
- #description {
-  text-align: center;
-  }
-  #commentsarea {
-    width: 945px;
-    height: 100px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+      :root {
+      --color-text-primary: #eeeeee;
+      --color-text-secondary: #d72323;
+      --color-bg-primary: #111111;
+        }
 
-</head><body class="content">
-<h1 id="title">What skater are you?</h1>
+      .content {
+        max-width: 960px;
+        margin: auto;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        font-size: 1.2em;
+      }
+      #title {
+        text-align: center;
+        }
+      #description {
+        text-align: center;
+        }
+      #commentsarea {
+        width: 952px;
+        height: 100px;
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-secondary);
+        font-family: 'ZCOOL KuaiLe', cursive;
+      }
+      #commentsarea:focus {
+        color: var(--color-text-primary)
+      }
+      #submit {
+      background: var(--color-bg-primary);
+      color: var(--color-text-secondary);
+      border: 1px solid var(--color-text-secondary);
+      padding: 5px;
+      border-radius: 5px;
+      width: 120px;
+      font-family: 'ZCOOL KuaiLe', cursive;
+    }
 
-<p id="description">A quick survey to define your skater profile</p>
+    #submit:hover {
+      background: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-text-primary);
+      padding: 5px;
+      border-radius: 5px;
+    }
 
-<form id="survey-form">
- <label for="name" id="name-label">
-Please enter your name here
-  <input type="text" style="margin: 5px" id="name" placeholder="Your name" required="">
- </label>
- <br>
- <label for="email" id="email-label">
-Please enter your email here
-  <input style="margin: 5px" type="email" id="email" placeholder="Your email" required="">
- </label>
- <br>
- <label for="number" id="number-label">
- Please enter your age here
-  <input style="margin: 5px" type="number" id="number" min="0" max="130" placeholder="Your age" required="">
- </label>
- <br>
-<label for="dropdown">Choose a style:</label>
-<select style="margin: 5px" id="dropdown" name="styles">
-  <option value="volvo">Street</option>
-  <option value="saab">Ramp</option>
-  <option value="fiat">Bowl</option>
-  <option value="audi">Downhill</option>
-</select>
+    #buttonwrapper {
+      text-align: center;
+    }
 
-  <fieldset style="margin: 5px"> <!--radio buttons-->
-    <legend>What's your favorite kind of skateboard:</legend>
-    <input id="shortskate" type="radio" name="skates" value="shortskate">
-    <label for="shortskate">Shortskate</label><br>
-    <input id="longskate" type="radio" name="skates" value="longskate">
-    <label for="longskate">Longskate</label><br>
-    <input id="cruiser" type="radio" name="skates" value="cruiser">
-    <label for="cruiser">Cruiser</label>
-  </fieldset>
-
-  <fieldset style="margin: 5px"> <!--checkboxes-->
-    <legend>What country did you skate in</legend>
-    <input id="France" type="checkbox" name="country" value="France">
-    <label for="France">France</label><br>
-    <input id="Canada" type="checkbox" name="country" value="Canada">
-    <label for="Canada">Canada</label><br>
-    <input id="USA" type="checkbox" name="country" value="USA">
-    <label for="USA">USA</label>
-  </fieldset>
-
-<textarea style="margin: 5px" id="commentsarea" name="message">Enter your comments here
-</textarea>
-
-<button style="margin: 5px" type="submit" id="submit">Submit</button>
-
-</form>
+    .input {
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      font-family: 'ZCOOL KuaiLe', cursive;
+      width: 100px;
+      }
 
 
-</body></html>
+
+    </style>
+  </head>
+
+  <body class="content">
+    <h1 id="title">What skater are you?</h1>
+
+    <p id="description">A quick survey to define your skater profile</p>
+
+    <form id="survey-form" style="margin-top: 50px">
+      <label for="name" id="name-label">
+      Please enter your name here
+        <input type="text" style="margin: 10px" id="name" class="input" placeholder="Your name" required="">
+      </label>
+      <br>
+      <label for="email" id="email-label">
+      Please enter your email here
+        <input style="margin: 10px" type="email" id="email" class="input" placeholder="Your email" required="">
+      </label>
+      <br>
+      <label for="number" id="number-label">
+      Please enter your age here
+        <input style="margin: 10px" type="number" id="number" class="input" min="0" max="130" placeholder="Your age" required="">
+      </label>
+      <br>
+      <label for="dropdown">Choose a style:</label>
+      <select style="margin: 5px" id="dropdown" name="styles" class="input">
+        <option value="street">Street</option>
+        <option value="ramp">Ramp</option>
+        <option value="bowl">Bowl</option>
+        <option value="downhill">Downhill</option>
+      </select>
+
+      <fieldset style="margin-top: 30px"> <!--radio buttons-->
+        <legend>What's your favorite kind of skateboard</legend>
+        <input id="shortskate" type="radio" name="skates" value="shortskate">
+        <label for="shortskate">Shortskate</label><br>
+        <input id="longskate" type="radio" name="skates" value="longskate">
+        <label for="longskate">Longskate</label><br>
+        <input id="cruiser" type="radio" name="skates" value="cruiser">
+        <label for="cruiser">Cruiser</label>
+      </fieldset>
+
+      <fieldset style="margin-top: 10px"> <!--checkboxes-->
+        <legend>What country did you skate in</legend>
+        <input id="France" type="checkbox" name="country" value="France">
+        <label for="France">France</label><br>
+        <input id="Canada" type="checkbox" name="country" value="Canada">
+        <label for="Canada">Canada</label><br>
+        <input id="USA" type="checkbox" name="country" value="USA">
+        <label for="USA">USA</label>
+      </fieldset>
+
+      <textarea style="margin-top: 20px" id="commentsarea" name="message">Enter your comments here
+      </textarea>
+      <div id="buttonwrapper">
+        <button style="margin: 10px" type="submit" id="submit">Submit</button>
+      </div>
+      
+
+    </form>
+  </body>
+</html>
