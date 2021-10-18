@@ -1,39 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
+
 <style>
+
+  :root {
+  --color-text-primary: rgb(106, 145, 0);
+  --color-text-secondary: rgb(166, 224, 5);
+  --color-text-hover: rgb(191, 202, 161);
+  --color-border: rgb(167, 255, 255);
+  --color-glow: rgb(128, 82, 158);
+  --color-bg-primary: rgb(74, 2, 122);
+  --color-bg-secondary: rgb(27, 9, 37);
+  --color-background-tertiary: rgb(102, 0, 170);
+  --color-shadow: rgb(26,30,38);
+}
   @media (max-width: 500px) {
     .project-tile {
-    font-size: 50px;
-    background-color: blue;}}
+    font-size: 1.6em;
+    background-color: var(--color-bg-secondary);}}
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    }
+
+  body {
+    background-color: var(--color-bg-primary);
+    font-family: 'Allerta Stencil';
+    /* font-family: 'Orbitron', sans-serif;*/
+    font-size: 1.2em;
+    margin: 0 0 0 0;
+    color: var(--color-text-primary);
+    }
+  
+  
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    color: var(--color-text-secondary);
+    font-style: bold;
+    margin: 20px 0 0 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    margin: 10px 0 0 0;
+  }
    
   #welcome-section {
-    height: 100vh;   
+    height: 400px;
     }
+  
+  #content {
+    padding: 60px 0 0 40px;
+  }
+
   #navbar {
-    position: fixed;
-    top: 0;
+    overflow: hidden;
+    background-color: var(--color-bg-secondary);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50px;
+    color: var(--color-text-secondary);  
+    border-bottom: 5px solid var(--color-background-tertiary);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 40px 20px var(--color-glow);
     }
+
+  .navbarLink {
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-secondary);
+    padding: 10px;
+  }
+
+  .navbarLink:hover {
+    color: var(--color-bg-secondary);
+    background-color: var(--color-text-secondary);
+  }
   
-    .body {
-    margin-top : 30px;  
-    }
+  a:link {text-decoration: none; color: var(--color-text-secondary)}
+  a:visited { text-decoration: none; color: var(--color-text-secondary); }
+  a:hover { text-decoration: none; color: var(--color-hover); }
+  a:focus { text-decoration: none; color: var(--color-hover); }
+  a:hover, a:active { text-decoration: none; color: var(--color-hover) }
+
   
-  </style>
-  
-  <nav id="navbar">
-    <a href="#project1">Link to project 1</a>
-      <a id="profile-link" href="#" target="_blank">Link to my profile</a>
-  </nav>
-  
-  <body class="body">
+</style>
     
-  <section id="welcome-section">
-    <h1>Hey, I am Boufadou</h1>
-  </section>
-  
-  <section id="projects">
-    <div class="project-tile" id="project1">
-      Jungle blockz soundtracks
-    </div>
-    <a href="#">link</a>
-  </section>
+<body class="body">
+  <div id="navbar-wrapper">
+    <nav id="navbar">
+      <a href="#project1" class="navbarLink">Link to project 1</a>
+      <a id="profile-link" class="navbarLink" href="#" target="_blank">Link to my profile</a>
+    </nav>
+  </div>
+
+  <div id="content">
+    <section id="welcome-section">
+      <h1>BOUFADOU</h1>
+      <h2>Personal Portfolio</h2>
+    </section>
     
-  </body>
+    <section id="projects">
+      <div class="project-tile" id="project1">
+        Jungle blockz soundtracks
+      </div>
+      <a href="#" id="link">link</a>
+    </section>
+  </div>
+  
+</body>
+
