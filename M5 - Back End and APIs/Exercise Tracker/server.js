@@ -1,5 +1,3 @@
-// FCC exercise tracker test 15 fails
-
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -65,7 +63,6 @@ app.get('/api/users', (req, res) => {
 
 // ----- POST request add exercise -----
 app.post('/api/users/:_id/exercises', bodyParser.urlencoded({extended: false}), (req, res) => {
-  console.log("req.body.date : " + req.body.date)
     if(req.params._id != "" && req.body.description != "" && req.body.duration != "") {
   
 
@@ -88,8 +85,6 @@ app.post('/api/users/:_id/exercises', bodyParser.urlencoded({extended: false}), 
         newExercise.save((err, data) => {
           if(!err) {
           res.json({_id: data.userId, username: username, date: data.date, duration: parseInt(data.duration), description: data.description})
-
-          console.log("newExercise.date : " + newExercise.date)
 
           } // if !err
         }) // save end
