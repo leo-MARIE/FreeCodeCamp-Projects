@@ -24,12 +24,12 @@ Please head to [this FCC Projects Webpage](https://leo-marie.github.io/FreeCodeC
 
 ## Certificates  
 
-![M1 Certification](/images/m1.png "M1 Certification")  
+![M1 Certification](/images/m1.PNG "M1 Certification")  
 
-![M2 Certification](/images/m2.png "M2 Certification")  
+![M2 Certification](/images/m2.PNG "M2 Certification")  
 
-![M3 Certification](/images/m3.png "M3 Certification")  
+![M3 Certification](/images/m3.PNG "M3 Certification")  
 
-![M4 Certification](/images/m4.png "M4 Certification")  
+![M4 Certification](/images/m4.PNG "M4 Certification")  
 
-![M5 Certification](/images/m5.png "M5 Certification")
+![M5 Certification](/images/m5.PNG "M5 Certification")
