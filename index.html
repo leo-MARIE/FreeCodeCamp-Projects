@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>FCC - Projects</title>
-  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
   <style>
 
@@ -25,86 +21,64 @@
 body, html {
     height: 100%;
     width: 100%;
-    margin: 0;
 }
 
 body {
-    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
-    /* font-family: 'Allerta Stencil'; */
-    /* font-family: 'Orbitron', sans-serif; */
+    position:fixed; /* IMPORTANT prevents scroll bar due tu margin-top on h1 */
     font-family: 'Changa', sans-serif;
     font-size: 1.6em;
-    margin: 0px;
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
     }
 
 #container {
-    width: 100vw;
-    height: 100%;
-    min-height: 100%;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 0.5fr 4fr;
-    grid-template-areas: 
-    ". title title title ."
-    ". . . . ."
-    "module1 module1 . module2 module2";
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1 {
-    grid-area: title;
+    margin-top: 4%;
+    text-align: center;
+    padding: 30px;
     color: var(--color-text-primary);
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
+    border: 10px inset var(--color-border);
+    border-radius:15px;
     box-shadow: /*0 0 10px 5px var(--color-glow), */3px 4px 7px inset var(--color-shadow), 3px 4px 7px var(--color-shadow); 
     /* #0ff */
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
-    border-radius:15px;
-    border: 10px inset var(--color-border);
-    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
-    /* margin: 60px 500px 250px 500px; */
-    padding: 30px;
-    text-align: center;
-    margin-top: 7%;
     text-shadow: 4px 4px 4px var(--color-shadow);
 }
 
 .modules {
+    padding: 30px;
     color: var(--color-text-primary);
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
+    border: 10px inset var(--color-border);
+    border-radius:15px;
     box-shadow: 0 0 20px 10px var(--color-glow), 3px 4px 7px inset var(--color-shadow);
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
-    border-radius:15px;
-    border: 10px inset var(--color-border);
-    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-secondary));
-    /* margin: 0px 70px 70px 70px; */
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    transition: transform .3s, border .2s, box-shadow .25s; /* Animation */
     text-shadow: 4px 4px 4px var(--color-shadow);
+    transition: transform .3s, border .2s, box-shadow .25s; /* Animation */
+}
+
+#modules {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* when vw > 380px, we have 2 columns */
+    margin-top: 4%;
 }
 
 .modules:hover {
+    border: 12px inset var(--color-border);
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     box-shadow: 0 0 40px 20px var(--color-glow), 5px 8px 5px inset var(--color-shadow);
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
-    border: 12px inset var(--color-border);
-    padding-bottom: 2%;
 }
 
-
-#module1 {
-    grid-area: module1;
-    margin: 10% 0% 30% 20%;
-}
-
-#module2 {
-    grid-area: module2;
-    margin: 10% 20% 30% 0%;
-}
-
-a:link {text-decoration: none}
+a:link {text-decoration: none; color: var(--color-text-primary); }
 a:visited { text-decoration: none; color: var(--color-text-secondary); }
 a:hover { text-decoration: none; color: var(--color-hover); font-size: 1.05em; }
 a:focus { text-decoration: none; color: var(--color-hover); }
@@ -115,46 +89,48 @@ a:hover, a:active { text-decoration: none; color: var(--color-hover) }
 <body>
   <div id="container">
     <h1>FreeCodeCamp Projects</h1>
-    <div id="module1" class="modules">
-        <h2>M1 - Responsive Web Design</h2>
-        <ul>
-            <li>
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/index.html">Personnal Portfolio Page</a>
-            </li>
-            <li>    
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/index.html">Product Landing Page</a>
-            </li>
-            <li>          
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/index.html">Survey Form</a>
-            </li>
-            <li>      
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/index.html">Technical Documentation Page</a>
-            </li>
-            <li>   
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/index.html">Tribute Page</a>
-            </li>
-        </ul>
-    </div>
+    <div id="modules">
+        <div id="module1" class="modules">
+            <h2>M1 - Responsive Web Design</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Personal%20Portfolio%20Webpage/index.html">Personnal Portfolio Page</a>
+                </li>
+                <li>    
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Product%20Landing%20Page/index.html">Product Landing Page</a>
+                </li>
+                <li>          
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Survey%20Form/index.html">Survey Form</a>
+                </li>
+                <li>      
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Technical%20Documentation%20Page/index.html">Technical Documentation Page</a>
+                </li>
+                <li>   
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M1%20-%20Responsive%20Web%20Design/Tribute%20Page/index.html">Tribute Page</a>
+                </li>
+            </ul>
+        </div>
 
-    <div id="module2" class="modules">
-        <h2>M4 - Data Visualization</h2>
-        <ul>
-            <li>
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html">D3 Bar Chart</a>
-            </li>
-            <li>    
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html">Choropleth Map</a>
-            </li>
-            <li>          
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Heat%20Map/index.html">Heat Map</a>
-            </li>
-            <li>      
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Scatterplot%20Graph/index.html">Scatterplot Graph</a>
-            </li>
-            <li>   
-                <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Tree%20Map/index.html">Tree Map</a>
-            </li>
-        </ul>
+        <div id="module2" class="modules">
+            <h2>M4 - Data Visualization</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/D3%20Bar%20Chart/index.html">D3 Bar Chart</a>
+                </li>
+                <li>    
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Choropleth%20Map/index.html">Choropleth Map</a>
+                </li>
+                <li>          
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Heat%20Map/index.html">Heat Map</a>
+                </li>
+                <li>      
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Scatterplot%20Graph/index.html">Scatterplot Graph</a>
+                </li>
+                <li>   
+                    <a target="_blank" href="https://leo-marie.github.io/FreeCodeCamp-Projects/M4%20-%20Data%20Visualisation/Tree%20Map/index.html">Tree Map</a>
+                </li>
+            </ul>
+        </div>
     </div>
   </div>
 

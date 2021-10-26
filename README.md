@@ -20,7 +20,7 @@ It will display in browser at localhost:3000
 * Open a browser and go to localhost:**port**
 ## GitHub Pages
 
-Please head to [this FCC Projects Webpage](https://leo-marie.github.io/FreeCodeCamp-Projects/) to see some of my projects on GH Pages.
+Please head to [this FCC Projects Webpage](https://leo-marie.github.io/FreeCodeCamp-Projects/) to see my static projects on GH Pages.
 
 ## Certificates  
 
